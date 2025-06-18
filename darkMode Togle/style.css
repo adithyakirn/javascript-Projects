@@ -1,0 +1,38 @@
+.round-div{
+    width: 64px;
+    height: 32px;
+    background: #fff;
+    margin: 0 auto;
+    box-shadow: 1px 1px 20px grey;
+    border-radius: 9999px;
+    transition: background .5s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.281);
+
+}
+.toggle{
+    border-radius: 50%;
+    background: black;
+    width: 32px;
+    height:32px;
+    box-shadow: 5px 1px 5px rgba(128, 128, 128, 0.388);
+    margin:0 2px 2px 2px;
+    transition: transform .5s ease-in-out;
+    transition-property: transform,background;
+}
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    transition: background .5s ease-in-out;
+}
+.move{
+    transform: translateX(28px) translateZ(180px);
+}
+.dark{
+    background: #000;
+    box-shadow: 1px 1px 20px rgb(45, 44, 44);
+}
+
+.light{
+    background: #fff;
+}

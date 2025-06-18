@@ -13,31 +13,14 @@ emojis.forEach((emoji) =>{
     })
 })
 btn.addEventListener("click",()=>{
-    if(selectedEmoji == ""){
+    if(selectedEmoji){
         Container.innerHTML =`
-            <strong>Thank You!</strong>
-            <br>
-            <br>
-            <p>We'll use your feedback to improve our customer support.</p>`;
-        }
-        else if(selectedEmoji =="Unhappy"){
-            Container.innerHTML =`
-            <strong>Thank You!</strong>
-            <br>
-    <video src="/Generated File June 07, 2025 - 5_56PM.mp4"  autoplay muted loop></video>
-            <br>
-    <audio src="/Ramba ho ho ho.mp3" autoplay loop></audio>
-
-            <p>Poda Myre.</p>
-            `
-        }
-        else{
-           Container.innerHTML = `
-            <strong>Thank You!</strong>
-            <br>
-            <br>
-             <strong id="result">Feedback: ${selectedEmoji} </strong>
-            <p>We'll use your feedback to improve our customer support.</p>`;
+            <strong>Thank you!</strong>
+        <br>
+        <br>
+        <strong>Feedback: ${selectedEmoji}</strong>
+        <p>We'll use your feedback to improve our customer support.</p>
+        `;
         }
     })
     

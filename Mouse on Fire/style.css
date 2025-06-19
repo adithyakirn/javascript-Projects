@@ -1,0 +1,22 @@
+@keyframes moveUp {
+  0% {
+    transform: translateY();
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
+.move-up {
+  animation: moveUp 4s ease-out forwards;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+  display: block;
+  position: relative;
+}
+span {
+  position: absolute;
+}

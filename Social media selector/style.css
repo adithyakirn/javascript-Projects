@@ -91,3 +91,8 @@ body {
 .rotate {
   transform: rotate(180deg);
 }
+.drop-down-content li:hover{
+  background: rgba(0, 0, 0, 0.197);
+  border-radius: 8px;
+  transition: background 0.2s ease-in-out;
+}

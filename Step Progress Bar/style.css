@@ -1,0 +1,157 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.round {
+  border: 7px solid grey;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s forward ease-in-out;
+  transition-property: border-color;
+}
+.individual-rounds {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+}
+.proggress-slider {
+  width: 150px;
+  height: 6px;
+}
+.prgress-bar {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  position: relative;
+  z-index: 5;
+}
+.inner-content {
+  color: grey;
+  fill: green;
+  display: flex;
+  align-items: center;
+  transition: 1s forward ease-in-out;
+  transition-property: fill, color;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 5;
+}
+.start-stop h1 {
+  font-size: 15px;
+}
+.start-stop {
+  position: absolute;
+  bottom: -80%;
+}
+button {
+  background-color: slateblue;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 70px 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+button svg {
+  height: 20px;
+  width: 20px;
+  color: #fff;
+}
+.proggress-slider {
+  position: absolute;
+  width: 550px;
+  z-index: 1;
+  left: 40px;
+  transition: 1s forward ease-in-out;
+  transition-property: background;
+}
+
+.animation1 {
+  animation: animation1 0.5s linear forwards;
+}
+.animation2 {
+  animation: animation2 0.5s linear forwards;
+}
+.animation3 {
+  animation: animation3 0.5s linear forwards;
+}
+
+.reverse-animation1 {
+  animation: reverse-animation1 0.5s linear forwards;
+}
+.reverse-animation2 {
+  animation: reverse-animation2 0.5s linear forwards;
+}
+.reverse-animation3 {
+  animation: reverse-animation3 0.5s linear forwards;
+}
+
+@keyframes animation1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 25%;
+  }
+}
+@keyframes animation2 {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes animation3 {
+  0% {
+    width: 60%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes reverse-animation1 {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes reverse-animation2 {
+  0% {
+    width: 60%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes reverse-animation3 {
+  0% {
+    width: 90%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+.front {
+  background: green;
+  z-index: 2;
+  width: 0;
+}
+.back {
+  background: grey;
+}

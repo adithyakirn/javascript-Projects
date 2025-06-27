@@ -1,0 +1,77 @@
+body{
+    background: #E0FFFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    color: rgb(0, 0, 0);
+}
+h1, h5, h2{
+    margin: 0;
+}
+.feedback-container{
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 320px;
+    max-height: 320px;
+    align-items: center;
+    background-color: #EAFEFE;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 85%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.feedback-header{
+    margin: 5px;
+    font-size: 20px;
+}
+#input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-family: inherit;
+  text-align: center;
+    transition: 0.5s ease-in-out
+}
+.input-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  background-color: #a0b6df65;
+  border: 1px solid rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+  color: rgb(142, 142, 142);
+  position: relative;
+  text-align: right;
+  font-weight: lighter;
+}
+.dlt-button, .Genarate-button{
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    background: #ffffff;
+    border: 1px solid rgba(135, 135, 135, 0.656); 
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 12px;
+    height: 25px;
+    width: 55px;
+    cursor: pointer;
+}
+.Genarate-button{
+    position: unset;
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+}

@@ -1,0 +1,28 @@
+.container{
+    text-align: center;
+    margin: 20px;
+}
+.individial-colors {     
+    backdrop-filter: blur(30px);                   
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);    
+    width: 250px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.header{
+    margin: 50px;
+}
+.colors-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: space-evenly;
+}
+body{
+    font-family: monospace;
+}

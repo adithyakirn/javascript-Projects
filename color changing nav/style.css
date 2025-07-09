@@ -1,0 +1,35 @@
+body{
+    font-family: monospace;
+    margin: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+.right-list{
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+}
+.text-container{
+    transition: .5s ease-in-out;
+    transition-property: color;
+    color: red;
+}
+.image-container img{
+    width: 100%;
+}
+.text-lorem-container{
+    margin: 20px 0;
+}
+.text-lorem-container p{
+    font-size: 20px;
+    margin: 30px;
+    text-wrap: balance;
+    line-height: 2em;
+}
